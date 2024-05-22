@@ -4,8 +4,6 @@ El objetivo es terminar con el mínimo número de cartas posibles en la mano.*/
 
 #include <iostream>
 #include <vector>
-#include <sstream>
-#include <string> 
 
 
 int main(){
@@ -16,14 +14,11 @@ int main(){
         std::cin >> n >> k;
 
         std::vector<int> cartas(n);
-        std::string num_cartas;
-        std::cin.ignore();
-        std::getline(std::cin, num_cartas);
+        
 
         //Almacenamos el número de las cartas.
-        std::istringstream iss(num_cartas);
-        for(int i = 0; i < n; i++){
-            iss >> cartas[i];
+        for (int i = 0; i < n; i++){
+            std::cin >> cartas[i];
         }
 
         //En caso de que "k" sea mayor a "n", devolvemos "n".
