@@ -1,0 +1,8 @@
+{
+    "cSpell.language": "es-ES,en",
+    "files.associations": {
+        "chrono": "cpp",
+        "span": "cpp",
+        "ostream": "cpp"
+    }
+}
